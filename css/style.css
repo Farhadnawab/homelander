@@ -70,27 +70,28 @@ body{
     line-height: 1.1;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6{
     font-family: var(--font-primary);
     line-height: 1;
 }
 
-h1{
+h1,.h1{
     font-size: 5.625rem;
 }
-h2{
+h2,.h2{
     font-size: 3.75rem;
 }
-h3{
+h3,.h3{
     font-size: 2.25rem;
 }
-h4{
+h4,.h4{
     font-size: 1.875rem;
 }
-h5{
+h5,.h5{
     font-size: 1.6875rem;
 }
-h6{
+h6,.h6{
     font-size: 1.3125rem;
 }
 
@@ -337,13 +338,10 @@ h6{
 
 
 /*** Hero Section ***/
-.hero-section{
-    font-size: 1.875rem;
-}
 .hero-section > .container{
     height: 51.5625rem;
 }
-.hero-section > .container p{
+.hero-section > .container h4{
     line-height: 1.5;
 }
 
@@ -416,7 +414,6 @@ h6{
     color: #fff;
     padding: 2.5rem 1rem;
     text-decoration: none;
-    font-size: 1.3125rem;
     font-weight: 800;
     letter-spacing: 1.5px;
 }
@@ -425,9 +422,6 @@ h6{
 .story-section{
     background: var(--secondary);
     padding: 6.25rem 0;
-}
-.story-section p{
-    font-size: 1.875rem;
 }
 .story-section .story-title-bg{
     background-image: url("../images/homelander-story.svg");
@@ -460,6 +454,7 @@ h6{
     height: 28.0625rem;
     background-image: url("../images/making-aliya.png");
     background-repeat: no-repeat;
+    background-position: center;
     z-index: -1;
     pointer-events: none;
 }
@@ -467,11 +462,13 @@ h6{
     content: "";
     position: absolute;
     bottom: 0;
-    right: 50%;
+    right: 30%;
     width: 54.9375rem;
     height: 33.8125rem;
     background-image: url("../images/homelander-aliya.png");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     z-index: -1;
     pointer-events: none;
 }
@@ -568,6 +565,7 @@ h6{
     transition: all ease 0.3s;
 }
 .gradient-boxes-section .box h5{
+    line-height: 1.4;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
 }
@@ -659,6 +657,7 @@ h6{
 }
 .lets-talk-section form .btn{
     margin-left: 2rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -694,52 +693,235 @@ h6{
         padding-right: 30px;
     }
 }
-@media only screen and (max-width: 1280px){
 
+@media only screen and (max-width: 1600px){
 
-    h1{
-        font-size: 3.5rem;
-    }
-    h2{
-        font-size: 2.75rem;
-    }
-    h3{
-        font-size: 1.75rem;
-    }
-    h4{
-        font-size: 1.375rem;
-    }
-    h5{
-        font-size: 1.125rem;
-    }
-    h6{
-        font-size: 1rem;
-    }
+    html{font-size: 15px;}
+
 }
-
-@media only screen and (max-width: 1400px){
+@media only screen and (max-width: 1300px){
 
     html{font-size: 14px;}
 
+    h1,.h1{
+        font-size: 5.125rem;
+    }
+    h2,.h2{
+        font-size: 3.25rem;
+    }
+    h3,.h3{
+        font-size: 1.75rem;
+    }
+    h4,.h4{
+        font-size: 1.375rem;
+    }
+    h5,.h5{
+        font-size: 1.1875rem;
+    }
+    h6,.h6{
+        font-size: 1rem;
+    }
+
+    .header .main-menu a{
+        font-size: 1.3rem;
+    }
+
+    .boxes-section .row {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+    .boxes-section .row > [class*="col"] {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .story-section .story-title-bg{
+        background-size: 40%;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+
+    h1,.h1{
+        font-size: 4.5rem;
+    }
+    h2,.h2{
+        font-size: 2.8rem;
+    }
+    h3,.h3{
+        font-size: 1.75rem;
+    }
+    h4,.h4{
+        font-size: 1.275rem;
+    }
+    h5,.h5{
+        font-size: 1.0875rem;
+    }
+    h6,.h6{
+        font-size: 1rem;
+    }
+
+    .aliya-section .row > [class*="col"]:last-child .box:before{
+        right: 10%;
+    }
+
+    .gradient-boxes-section .box{
+        padding: 2rem;
+    }
 }
 
 @media only screen and (max-width: 992px){
 
+    html{font-size: 13px;}
+
+    h1,.h1{
+        font-size: 3.5rem;
+    }
+    h2,.h2{
+        font-size: 2.5rem;
+    }
+
+    .hero-section > .container {
+        height: 41.5625rem;
+    }
+
+    .boxes-section{
+        padding-bottom: 5rem;
+    }
+    .boxes-section .row > [class*="col"]:nth-child(2),
+    .boxes-section .row > [class*="col"]:nth-child(3){
+        margin-top: 0;
+    }
+
+    .aliya-section .row > [class*="col"] {
+        margin-bottom: 4rem;
+    }
+    .aliya-section .row > [class*="col"]:last-child {
+        margin-bottom: 0;
+    }
+    .aliya-section .row > [class*="col"]:last-child .box:before {
+        right: 50%;
+    }
+
+    .lets-talk-section{
+        padding-top: 15rem;
+        padding-bottom: 5rem;
+    }
 }
 
 @media only screen and (max-width: 767px){
     
-    .btn{
-        padding: 0.625rem;
-        min-width: 100px;
+    h1,.h1{
+        font-size: 2.5rem;
+    }
+    h2,.h2{
+        font-size: 2rem;
+    }
+    h4,.h4{
+        font-size: 1.1rem;
+    }
+    h5,.h5{
+        font-size: 1.0875rem;
+    }
+    h6,.h6{
+        font-size: 1rem;
     }
 
+    .btn{
+        padding: 0.625rem;
+        min-width: 185px;
+    }
+
+    .hero-section > .container {
+        height: 31.5625rem;
+    }
+
+    .header .main-menu {
+        padding-bottom: 3px;
+    }
+    .header .main-menu a{
+        margin-left: 1.25rem;
+    }
+
+    .boxes-section .box{
+        max-width: 100%;
+    }
+
+    .story-section .story-title-bg {
+        background-position: center;
+    }
+
+    .aliya-section .box{
+        margin-right: auto;
+    }
+
+    .testimonial-section .text-wrap {
+        margin-top: 3rem;
+    }
+    .testimonial-section .text-wrap .name{
+        text-align: right;
+    }
+
+    .footer .paragraph p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer .row > [class*="col"] {
+        margin-bottom: 2rem;
+    }
 }
 
 @media only screen and (max-width: 575px){
-
+    
+    .header .main-menu a{
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
 }
 
 @media only screen and (max-width: 480px){
     
+    .hero-section > .container{
+        height: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+    .hero-section > .container .col:first-child{
+        margin-bottom: 2rem;
+    }
+    .hero-section .row{
+        flex-direction: column;
+    }
+
+    .header .main-menu a{
+        font-size: 1rem;
+        margin-left: 0.8rem;
+    }
+
+    .lets-talk-section form .btn{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .aliya-section .row > [class*="col"]:first-child .box:before,
+    .aliya-section .row > [class*="col"]:last-child .box:before {
+        bottom: 50%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .aliya-section .row > [class*="col"] .box{
+        margin-top: 8rem;
+    }
+    .aliya-section .row > [class*="col"]:last-child .box:before{
+        bottom: 30%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+
+    .header .main-menu a {
+        font-size: 0.9rem;
+        margin-left: 0.6rem;
+    }
 }
