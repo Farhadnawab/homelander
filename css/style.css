@@ -492,7 +492,7 @@ h6,.h6{
 .aliya-section .box ul.i-icon li:before{
     content: "";
     position: absolute;
-    top: 3px;
+    top: 10px;
     left: 0;
     width: 27px;
     height: 18px;
@@ -502,7 +502,7 @@ h6,.h6{
 .aliya-section .box ul.i-heart li:before{
     content: "";
     position: absolute;
-    top: 3px;
+    top: 10px;
     left: 0;
     width: 24px;
     height: 24px;
