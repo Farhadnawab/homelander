@@ -682,6 +682,42 @@ h6,.h6{
     color: inherit;
 }
 
+
+#nav-toggle{
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    border: 0;
+    width: 35px;
+    height: 35px;
+    background: var(--primary);
+}
+#nav-toggle *{
+    fill: #fff;
+}
+.mobile-menu {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    top: 100%;
+    right: 15px;
+    min-width: 200px;
+    background: var(--primary);
+}
+.mobile-menu.active{
+    display: block;
+}
+.mobile-menu a{
+    display: block;
+    padding: 10px;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+.mobile-menu a:hover{
+    background: var(--secondary);
+}
+
 /**** Responsive *****/
 /*********************/
 
